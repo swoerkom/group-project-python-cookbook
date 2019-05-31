@@ -22,6 +22,6 @@ describe 'python::default' do
     it "should install python-pip" do
       expect(chef_run).to install_package("python-pip")
     end
-
+    at_exit { ChefSpec::Coverage.report! }
   end
 end
