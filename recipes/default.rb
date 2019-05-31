@@ -15,3 +15,11 @@ end
 package("python-minimal") do
   action :install
 end
+
+template '/app/' do
+  source '/app/requirements.txt'
+end
+
+execute 'requirements' do
+  command 'pip install -r /home/ubuntu/app/requirements.txt'
+end
