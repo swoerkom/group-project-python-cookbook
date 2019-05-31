@@ -20,7 +20,3 @@ end
 describe package 'python' do
   it { should be_installed }
 end
-
-describe package 'pip' do
-  it { should be_installed }
-end
