@@ -1,190 +1,168 @@
-I, [2019-05-31T10:07:02.792072 #50928]  INFO -- default-ubuntu-1604: -----> Cleaning up any prior instances of <default-ubuntu-1604>
-I, [2019-05-31T10:07:02.792752 #50928]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
-I, [2019-05-31T10:07:09.566889 #50928]  INFO -- default-ubuntu-1604: ==> default: Forcing shutdown of VM...
-I, [2019-05-31T10:07:11.021740 #50928]  INFO -- default-ubuntu-1604: ==> default: Destroying VM and associated drives...
-I, [2019-05-31T10:07:11.349699 #50928]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Removing hosts
-I, [2019-05-31T10:07:11.438361 #50928]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> destroyed.
-I, [2019-05-31T10:07:11.440866 #50928]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m8.65s).
-I, [2019-05-31T10:07:11.442793 #50928]  INFO -- default-ubuntu-1604: -----> Testing <default-ubuntu-1604>
-I, [2019-05-31T10:07:11.443066 #50928]  INFO -- default-ubuntu-1604: -----> Creating <default-ubuntu-1604>...
-I, [2019-05-31T10:07:13.834412 #50928]  INFO -- default-ubuntu-1604: Bringing machine 'default' up with 'virtualbox' provider...
-I, [2019-05-31T10:07:14.079701 #50928]  INFO -- default-ubuntu-1604: ==> default: Importing base box 'bento/ubuntu-16.04'...
-I, [2019-05-31T10:07:24.287194 #50928]  INFO -- default-ubuntu-1604: [KProgress: 10%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
-I, [2019-05-31T10:07:24.477808 #50928]  INFO -- default-ubuntu-1604: ==> default: Checking if box 'bento/ubuntu-16.04' version '201812.27.0' is up to date...
-I, [2019-05-31T10:07:25.302177 #50928]  INFO -- default-ubuntu-1604: ==> default: Setting the name of the VM: default-ubuntu-1604_default_1559293645241_51787
-I, [2019-05-31T10:07:25.789094 #50928]  INFO -- default-ubuntu-1604: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
-I, [2019-05-31T10:07:26.271808 #50928]  INFO -- default-ubuntu-1604: ==> default: Clearing any previously set network interfaces...
-I, [2019-05-31T10:07:26.354611 #50928]  INFO -- default-ubuntu-1604: ==> default: Preparing network interfaces based on configuration...
-I, [2019-05-31T10:07:26.355639 #50928]  INFO -- default-ubuntu-1604:     default: Adapter 1: nat
-I, [2019-05-31T10:07:26.434656 #50928]  INFO -- default-ubuntu-1604: ==> default: Forwarding ports...
-I, [2019-05-31T10:07:26.542539 #50928]  INFO -- default-ubuntu-1604:     default: 22 (guest) => 2200 (host) (adapter 1)
-I, [2019-05-31T10:07:26.764346 #50928]  INFO -- default-ubuntu-1604: ==> default: Booting VM...
-I, [2019-05-31T10:07:27.122540 #50928]  INFO -- default-ubuntu-1604: ==> default: Waiting for machine to boot. This may take a few minutes...
-I, [2019-05-31T10:07:28.025136 #50928]  INFO -- default-ubuntu-1604:     default: SSH address: 127.0.0.1:2200
-I, [2019-05-31T10:07:28.025661 #50928]  INFO -- default-ubuntu-1604:     default: SSH username: vagrant
-I, [2019-05-31T10:07:28.026112 #50928]  INFO -- default-ubuntu-1604:     default: SSH auth method: private key
-I, [2019-05-31T10:07:44.678536 #50928]  INFO -- default-ubuntu-1604:     default: 
-I, [2019-05-31T10:07:44.678731 #50928]  INFO -- default-ubuntu-1604:     default: Vagrant insecure key detected. Vagrant will automatically replace
-I, [2019-05-31T10:07:44.678802 #50928]  INFO -- default-ubuntu-1604:     default: this with a newly generated keypair for better security.
-I, [2019-05-31T10:07:46.212709 #50928]  INFO -- default-ubuntu-1604:     default: 
-I, [2019-05-31T10:07:46.212847 #50928]  INFO -- default-ubuntu-1604:     default: Inserting generated public key within guest...
-I, [2019-05-31T10:07:46.405857 #50928]  INFO -- default-ubuntu-1604:     default: Removing insecure key from the guest if it's present...
-I, [2019-05-31T10:07:46.583504 #50928]  INFO -- default-ubuntu-1604:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
-I, [2019-05-31T10:07:48.180894 #50928]  INFO -- default-ubuntu-1604: ==> default: Machine booted and ready!
-I, [2019-05-31T10:07:48.181755 #50928]  INFO -- default-ubuntu-1604: ==> default: Checking for guest additions in VM...
-I, [2019-05-31T10:07:48.253990 #50928]  INFO -- default-ubuntu-1604:     default: The guest additions on this VM do not match the installed version of
-I, [2019-05-31T10:07:48.254071 #50928]  INFO -- default-ubuntu-1604:     default: VirtualBox! In most cases this is fine, but in rare cases it can
-I, [2019-05-31T10:07:48.254105 #50928]  INFO -- default-ubuntu-1604:     default: prevent things such as shared folders from working properly. If you see
-I, [2019-05-31T10:07:48.254149 #50928]  INFO -- default-ubuntu-1604:     default: shared folder errors, please make sure the guest additions within the
-I, [2019-05-31T10:07:48.254186 #50928]  INFO -- default-ubuntu-1604:     default: virtual machine match the version of VirtualBox you have installed on
-I, [2019-05-31T10:07:48.254224 #50928]  INFO -- default-ubuntu-1604:     default: your host and reload your VM.
-I, [2019-05-31T10:07:48.254252 #50928]  INFO -- default-ubuntu-1604:     default: 
-I, [2019-05-31T10:07:48.254367 #50928]  INFO -- default-ubuntu-1604:     default: Guest Additions Version: 5.2.22
-I, [2019-05-31T10:07:48.254393 #50928]  INFO -- default-ubuntu-1604:     default: VirtualBox Version: 6.0
-I, [2019-05-31T10:07:48.255953 #50928]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Checking for host entries
-I, [2019-05-31T10:07:48.257436 #50928]  INFO -- default-ubuntu-1604: ==> default: Setting hostname...
-I, [2019-05-31T10:07:53.776580 #50928]  INFO -- default-ubuntu-1604: ==> default: Mounting shared folders...
-I, [2019-05-31T10:07:53.777518 #50928]  INFO -- default-ubuntu-1604:     default: /tmp/omnibus/cache => /Users/tech-a04/.kitchen/cache
-I, [2019-05-31T10:07:54.529115 #50928]  INFO -- default-ubuntu-1604: ==> default: Machine not provisioned because `--no-provision` is specified.
-I, [2019-05-31T10:07:57.931629 #50928]  INFO -- default-ubuntu-1604: [SSH] Established
-I, [2019-05-31T10:07:57.932990 #50928]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> created.
-I, [2019-05-31T10:07:57.934139 #50928]  INFO -- default-ubuntu-1604: Finished creating <default-ubuntu-1604> (0m46.47s).
-I, [2019-05-31T10:07:57.935909 #50928]  INFO -- default-ubuntu-1604: -----> Converging <default-ubuntu-1604>...
-I, [2019-05-31T10:07:57.937490 #50928]  INFO -- default-ubuntu-1604: Preparing files for transfer
-I, [2019-05-31T10:07:57.937872 #50928]  INFO -- default-ubuntu-1604: Preparing dna.json
-I, [2019-05-31T10:07:57.938670 #50928]  INFO -- default-ubuntu-1604: Resolving cookbook dependencies with Berkshelf 7.0.4...
-I, [2019-05-31T10:08:02.798575 #50928]  INFO -- default-ubuntu-1604: Removing non-cookbook files before transfer
-I, [2019-05-31T10:08:02.804796 #50928]  INFO -- default-ubuntu-1604: Preparing validation.pem
-I, [2019-05-31T10:08:02.808321 #50928]  INFO -- default-ubuntu-1604: Preparing client.rb
-I, [2019-05-31T10:08:02.921073 #50928]  INFO -- default-ubuntu-1604: ubuntu 16.04 x86_64
-I, [2019-05-31T10:08:02.921154 #50928]  INFO -- default-ubuntu-1604: Getting information for chef stable 14.10.9 for ubuntu...
-I, [2019-05-31T10:08:02.921189 #50928]  INFO -- default-ubuntu-1604: downloading https://omnitruck.chef.io/stable/chef/metadata?v=14.10.9&p=ubuntu&pv=16.04&m=x86_64
-I, [2019-05-31T10:08:02.921218 #50928]  INFO -- default-ubuntu-1604:   to file /tmp/install.sh.1756/metadata.txt
-I, [2019-05-31T10:08:02.921994 #50928]  INFO -- default-ubuntu-1604: trying wget...
-I, [2019-05-31T10:08:03.023448 #50928]  INFO -- default-ubuntu-1604: sha1	cf19d6a3c21bef28160a9b6896381c6e160fb640
-I, [2019-05-31T10:08:03.024657 #50928]  INFO -- default-ubuntu-1604: sha256	c41299e167acb143b2328a63a774c3b85cd939d3ee40bc4aedf9f62252fe4ab9
-I, [2019-05-31T10:08:03.025725 #50928]  INFO -- default-ubuntu-1604: url	https://packages.chef.io/files/stable/chef/14.10.9/ubuntu/16.04/chef_14.10.9-1_amd64.deb
-I, [2019-05-31T10:08:03.026382 #50928]  INFO -- default-ubuntu-1604: version	14.10.9
-I, [2019-05-31T10:08:03.029124 #50928]  INFO -- default-ubuntu-1604: downloaded metadata file looks valid...
-I, [2019-05-31T10:08:03.040542 #50928]  INFO -- default-ubuntu-1604: /tmp/omnibus/cache/chef_14.10.9-1_amd64.deb exists
-I, [2019-05-31T10:08:03.041228 #50928]  INFO -- default-ubuntu-1604: Comparing checksum with sha256sum...
-I, [2019-05-31T10:08:03.474425 #50928]  INFO -- default-ubuntu-1604: Installing chef 14.10.9
-I, [2019-05-31T10:08:03.474502 #50928]  INFO -- default-ubuntu-1604: installing with dpkg...
-I, [2019-05-31T10:08:03.582193 #50928]  INFO -- default-ubuntu-1604: Selecting previously unselected package chef.
-I, [2019-05-31T10:08:04.738951 #50928]  INFO -- default-ubuntu-1604: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38412 files and directories currently installed.)
-I, [2019-05-31T10:08:04.773839 #50928]  INFO -- default-ubuntu-1604: Preparing to unpack .../cache/chef_14.10.9-1_amd64.deb ...
-I, [2019-05-31T10:08:04.783583 #50928]  INFO -- default-ubuntu-1604: Unpacking chef (14.10.9-1) ...
-I, [2019-05-31T10:08:13.622774 #50928]  INFO -- default-ubuntu-1604: Setting up chef (14.10.9-1) ...
-I, [2019-05-31T10:08:13.714936 #50928]  INFO -- default-ubuntu-1604: Thank you for installing Chef!
-I, [2019-05-31T10:08:13.791943 #50928]  INFO -- default-ubuntu-1604: Transferring files to <default-ubuntu-1604>
-I, [2019-05-31T10:08:15.273546 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:14+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /tmp/kitchen, /tmp/kitchen
-I, [2019-05-31T10:08:15.274202 #50928]  INFO -- default-ubuntu-1604:   One version per cookbook
-I, [2019-05-31T10:08:15.274511 #50928]  INFO -- default-ubuntu-1604: 
-I, [2019-05-31T10:08:15.283130 #50928]  INFO -- default-ubuntu-1604: Starting Chef Client, version 14.10.9
-I, [2019-05-31T10:08:15.283867 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:14+00:00] INFO: *** Chef 14.10.9 ***
-I, [2019-05-31T10:08:15.284534 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:14+00:00] INFO: Platform: x86_64-linux
-I, [2019-05-31T10:08:15.285195 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:14+00:00] INFO: Chef-client pid: 1835
-I, [2019-05-31T10:08:15.286606 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:14+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
-I, [2019-05-31T10:08:16.866018 #50928]  INFO -- default-ubuntu-1604: Creating a new client identity for default-ubuntu-1604 using the validator key.
-I, [2019-05-31T10:08:16.866655 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:15+00:00] INFO: Client key /tmp/kitchen/client.pem is not present - registering
-I, [2019-05-31T10:08:17.088868 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:16+00:00] INFO: Setting the run_list to ["recipe[python::default]"] from CLI options
-I, [2019-05-31T10:08:17.099625 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:16+00:00] INFO: Run List is [recipe[python::default]]
-I, [2019-05-31T10:08:17.100515 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:16+00:00] INFO: Run List expands to [python::default]
-I, [2019-05-31T10:08:17.101335 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:16+00:00] INFO: Starting Chef Run for default-ubuntu-1604
-I, [2019-05-31T10:08:17.102119 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:16+00:00] INFO: Running start handlers
-I, [2019-05-31T10:08:17.102792 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:16+00:00] INFO: Start handlers complete.
-I, [2019-05-31T10:08:17.106040 #50928]  INFO -- default-ubuntu-1604: resolving cookbooks for run list: ["python::default"]
-I, [2019-05-31T10:08:17.123937 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:16+00:00] INFO: Loading cookbooks [python@0.1.0]
-I, [2019-05-31T10:08:17.125674 #50928]  INFO -- default-ubuntu-1604: Synchronizing Cookbooks:
-I, [2019-05-31T10:08:17.136424 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:16+00:00] INFO: Storing updated cookbooks/python/metadata.json in the cache.
-I, [2019-05-31T10:08:17.136964 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:16+00:00] INFO: Storing updated cookbooks/python/recipes/default.rb in the cache.
-I, [2019-05-31T10:08:17.139763 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:16+00:00] INFO: Storing updated cookbooks/python/metadata.rb in the cache.
-I, [2019-05-31T10:08:17.140377 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:16+00:00] INFO: Storing updated cookbooks/python/README.md in the cache.
-I, [2019-05-31T10:08:17.141865 #50928]  INFO -- default-ubuntu-1604:   - python (0.1.0)
-I, [2019-05-31T10:08:17.144137 #50928]  INFO -- default-ubuntu-1604: Installing Cookbook Gems:
-I, [2019-05-31T10:08:17.148744 #50928]  INFO -- default-ubuntu-1604: Compiling Cookbooks...
-I, [2019-05-31T10:08:17.149505 #50928]  INFO -- default-ubuntu-1604: Converging 3 resources
-I, [2019-05-31T10:08:17.150553 #50928]  INFO -- default-ubuntu-1604: Recipe: python::default
-I, [2019-05-31T10:08:17.152243 #50928]  INFO -- default-ubuntu-1604:   * apt_update[update] action update[2019-05-31T09:08:16+00:00] INFO: Processing apt_update[update] action update (python::default line 7)
-I, [2019-05-31T10:08:17.154365 #50928]  INFO -- default-ubuntu-1604: 
-I, [2019-05-31T10:08:17.155578 #50928]  INFO -- default-ubuntu-1604:     - force update new lists of packages
-I, [2019-05-31T10:08:17.156979 #50928]  INFO -- default-ubuntu-1604:     * directory[/var/lib/apt/periodic] action create[2019-05-31T09:08:16+00:00] INFO: Processing directory[/var/lib/apt/periodic] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 60)
-I, [2019-05-31T10:08:17.159597 #50928]  INFO -- default-ubuntu-1604:  (up to date)
-I, [2019-05-31T10:08:17.161394 #50928]  INFO -- default-ubuntu-1604:     * directory[/etc/apt/apt.conf.d] action create[2019-05-31T09:08:16+00:00] INFO: Processing directory[/etc/apt/apt.conf.d] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 60)
-I, [2019-05-31T10:08:17.164140 #50928]  INFO -- default-ubuntu-1604:  (up to date)
-I, [2019-05-31T10:08:17.166660 #50928]  INFO -- default-ubuntu-1604:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing[2019-05-31T09:08:16+00:00] INFO: Processing file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 65)
-I, [2019-05-31T10:08:17.170640 #50928]  INFO -- default-ubuntu-1604:  (up to date)
-I, [2019-05-31T10:08:17.172832 #50928]  INFO -- default-ubuntu-1604:     * execute[apt-get -q update] action run[2019-05-31T09:08:16+00:00] INFO: Processing execute[apt-get -q update] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 70)
-I, [2019-05-31T10:08:17.262360 #50928]  INFO -- default-ubuntu-1604: 
-I, [2019-05-31T10:08:17.263861 #50928]  INFO -- default-ubuntu-1604:       [execute] Hit:1 http://archive.ubuntu.com/ubuntu xenial InRelease
-I, [2019-05-31T10:08:17.266666 #50928]  INFO -- default-ubuntu-1604:          Get:2 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
-I, [2019-05-31T10:08:17.272938 #50928]  INFO -- default-ubuntu-1604:          Get:3 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
-I, [2019-05-31T10:08:17.293053 #50928]  INFO -- default-ubuntu-1604:          Get:4 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
-I, [2019-05-31T10:08:17.476737 #50928]  INFO -- default-ubuntu-1604:          Get:5 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [651 kB]
-I, [2019-05-31T10:08:17.532640 #50928]  INFO -- default-ubuntu-1604:          Get:6 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages [539 kB]
-I, [2019-05-31T10:08:17.591522 #50928]  INFO -- default-ubuntu-1604:          Get:7 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [266 kB]
-I, [2019-05-31T10:08:17.623839 #50928]  INFO -- default-ubuntu-1604:          Get:8 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [435 kB]
-I, [2019-05-31T10:08:17.658171 #50928]  INFO -- default-ubuntu-1604:          Get:9 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages [378 kB]
-I, [2019-05-31T10:08:17.674298 #50928]  INFO -- default-ubuntu-1604:          Get:10 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [176 kB]
-I, [2019-05-31T10:08:17.684856 #50928]  INFO -- default-ubuntu-1604:          Get:11 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [5600 B]
-I, [2019-05-31T10:08:17.688798 #50928]  INFO -- default-ubuntu-1604:          Get:12 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages [5764 B]
-I, [2019-05-31T10:08:17.694066 #50928]  INFO -- default-ubuntu-1604:          Get:13 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en [2676 B]
-I, [2019-05-31T10:08:17.792268 #50928]  INFO -- default-ubuntu-1604:          Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [957 kB]
-I, [2019-05-31T10:08:17.869389 #50928]  INFO -- default-ubuntu-1604:          Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages [824 kB]
-I, [2019-05-31T10:08:17.940768 #50928]  INFO -- default-ubuntu-1604:          Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en [381 kB]
-I, [2019-05-31T10:08:17.984997 #50928]  INFO -- default-ubuntu-1604:          Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [7616 B]
-I, [2019-05-31T10:08:17.993119 #50928]  INFO -- default-ubuntu-1604:          Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages [7580 B]
-I, [2019-05-31T10:08:17.997303 #50928]  INFO -- default-ubuntu-1604:          Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en [2272 B]
-I, [2019-05-31T10:08:18.005946 #50928]  INFO -- default-ubuntu-1604:          Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [748 kB]
-I, [2019-05-31T10:08:18.067381 #50928]  INFO -- default-ubuntu-1604:          Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages [685 kB]
-I, [2019-05-31T10:08:18.104823 #50928]  INFO -- default-ubuntu-1604:          Get:22 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [311 kB]
-I, [2019-05-31T10:08:18.123025 #50928]  INFO -- default-ubuntu-1604:          Get:23 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [16.7 kB]
-I, [2019-05-31T10:08:18.125805 #50928]  INFO -- default-ubuntu-1604:          Get:24 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages [15.8 kB]
-I, [2019-05-31T10:08:23.462053 #50928]  INFO -- default-ubuntu-1604:          Fetched 6741 kB in 2s (3098 kB/s)
-I, [2019-05-31T10:08:25.625170 #50928]  INFO -- default-ubuntu-1604:          Reading package lists...
-I, [2019-05-31T10:08:25.796698 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:24+00:00] INFO: execute[apt-get -q update] ran successfully
-I, [2019-05-31T10:08:25.800070 #50928]  INFO -- default-ubuntu-1604:       - execute ["apt-get", "-q", "update"]
-I, [2019-05-31T10:08:25.800196 #50928]  INFO -- default-ubuntu-1604:   
-I, [2019-05-31T10:08:25.802029 #50928]  INFO -- default-ubuntu-1604:   * apt_package[python-pip] action install[2019-05-31T09:08:24+00:00] INFO: Processing apt_package[python-pip] action install (python::default line 11)
-I, [2019-05-31T10:08:55.741413 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:54+00:00] INFO: apt_package[python-pip] installed python-pip at 8.1.1-2ubuntu0.4
-I, [2019-05-31T10:08:55.742694 #50928]  INFO -- default-ubuntu-1604: 
-I, [2019-05-31T10:08:55.743419 #50928]  INFO -- default-ubuntu-1604:     - install version 8.1.1-2ubuntu0.4 of package python-pip
-I, [2019-05-31T10:08:55.745852 #50928]  INFO -- default-ubuntu-1604:   * apt_package[python-minimal] action install[2019-05-31T09:08:54+00:00] INFO: Processing apt_package[python-minimal] action install (python::default line 15)
-I, [2019-05-31T10:08:55.831703 #50928]  INFO -- default-ubuntu-1604:  (up to date)
-I, [2019-05-31T10:08:55.894454 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:55+00:00] INFO: Chef Run complete in 38.810636477 seconds
-I, [2019-05-31T10:08:55.895729 #50928]  INFO -- default-ubuntu-1604: 
-I, [2019-05-31T10:08:55.896500 #50928]  INFO -- default-ubuntu-1604: Running handlers:
-I, [2019-05-31T10:08:55.897274 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:55+00:00] INFO: Running report handlers
-I, [2019-05-31T10:08:55.898039 #50928]  INFO -- default-ubuntu-1604: Running handlers complete
-I, [2019-05-31T10:08:55.898905 #50928]  INFO -- default-ubuntu-1604: [2019-05-31T09:08:55+00:00] INFO: Report handlers complete
-I, [2019-05-31T10:08:55.899963 #50928]  INFO -- default-ubuntu-1604: Chef Client finished, 3/7 resources updated in 40 seconds
-I, [2019-05-31T10:08:55.911076 #50928]  INFO -- default-ubuntu-1604: Downloading files from <default-ubuntu-1604>
-I, [2019-05-31T10:08:55.918078 #50928]  INFO -- default-ubuntu-1604: Finished converging <default-ubuntu-1604> (0m57.97s).
-I, [2019-05-31T10:08:55.918261 #50928]  INFO -- default-ubuntu-1604: -----> Setting up <default-ubuntu-1604>...
-I, [2019-05-31T10:08:55.923158 #50928]  INFO -- default-ubuntu-1604: Finished setting up <default-ubuntu-1604> (0m0.00s).
-I, [2019-05-31T10:08:55.923317 #50928]  INFO -- default-ubuntu-1604: -----> Verifying <default-ubuntu-1604>...
-I, [2019-05-31T10:08:56.377277 #50928]  INFO -- default-ubuntu-1604: Loaded tests from {:path=>".Users.tech-a04.Documents.week-10.day-4.Group Project - Uber App.group-project-python-cookbook.test.integration.default"} 
-E, [2019-05-31T10:08:56.732155 #50928] ERROR -- default-ubuntu-1604: Verify failed on instance <default-ubuntu-1604>.
-E, [2019-05-31T10:08:56.732506 #50928] ERROR -- default-ubuntu-1604: ------Exception-------
-E, [2019-05-31T10:08:56.732554 #50928] ERROR -- default-ubuntu-1604: Class: Kitchen::ActionFailed
-E, [2019-05-31T10:08:56.732581 #50928] ERROR -- default-ubuntu-1604: Message: Inspec Runner returns 100
-E, [2019-05-31T10:08:56.732604 #50928] ERROR -- default-ubuntu-1604: ----------------------
-E, [2019-05-31T10:08:56.732626 #50928] ERROR -- default-ubuntu-1604: ------Backtrace-------
-E, [2019-05-31T10:08:56.732654 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-inspec-0.23.1/lib/kitchen/verifier/inspec.rb:98:in `call'
-E, [2019-05-31T10:08:56.732677 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/instance.rb:443:in `block in verify_action'
-E, [2019-05-31T10:08:56.732700 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/instance.rb:536:in `synchronize_or_call'
-E, [2019-05-31T10:08:56.732755 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/instance.rb:498:in `block in action'
-E, [2019-05-31T10:08:56.732779 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
-E, [2019-05-31T10:08:56.732802 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/instance.rb:497:in `action'
-E, [2019-05-31T10:08:56.732825 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/instance.rb:435:in `verify_action'
-E, [2019-05-31T10:08:56.732847 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/instance.rb:368:in `block in transition_to'
-E, [2019-05-31T10:08:56.732910 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/instance.rb:367:in `each'
-E, [2019-05-31T10:08:56.732948 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/instance.rb:367:in `transition_to'
-E, [2019-05-31T10:08:56.732984 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/instance.rb:157:in `verify'
-E, [2019-05-31T10:08:56.733021 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/instance.rb:186:in `block in test'
-E, [2019-05-31T10:08:56.733057 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
-E, [2019-05-31T10:08:56.733091 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/instance.rb:182:in `test'
-E, [2019-05-31T10:08:56.733126 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/command.rb:197:in `public_send'
-E, [2019-05-31T10:08:56.733154 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
-E, [2019-05-31T10:08:56.733177 #50928] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.22.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
-E, [2019-05-31T10:08:56.733201 #50928] ERROR -- default-ubuntu-1604: ----End Backtrace-----
+I, [2019-05-31T10:46:25.020589 #52391]  INFO -- default-ubuntu-1604: -----> Cleaning up any prior instances of <default-ubuntu-1604>
+I, [2019-05-31T10:46:25.020952 #52391]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
+I, [2019-05-31T10:46:25.022710 #52391]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m0.00s).
+I, [2019-05-31T10:46:25.024677 #52391]  INFO -- default-ubuntu-1604: -----> Testing <default-ubuntu-1604>
+I, [2019-05-31T10:46:25.024987 #52391]  INFO -- default-ubuntu-1604: -----> Creating <default-ubuntu-1604>...
+I, [2019-05-31T10:46:27.731033 #52391]  INFO -- default-ubuntu-1604: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2019-05-31T10:46:28.007267 #52391]  INFO -- default-ubuntu-1604: ==> default: Importing base box 'bento/ubuntu-16.04'...
+I, [2019-05-31T10:46:38.045052 #52391]  INFO -- default-ubuntu-1604: [KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2019-05-31T10:46:38.245510 #52391]  INFO -- default-ubuntu-1604: ==> default: Checking if box 'bento/ubuntu-16.04' version '201812.27.0' is up to date...
+I, [2019-05-31T10:46:39.186169 #52391]  INFO -- default-ubuntu-1604: ==> default: Setting the name of the VM: default-ubuntu-1604_default_1559295999116_87652
+I, [2019-05-31T10:46:40.019156 #52391]  INFO -- default-ubuntu-1604: ==> default: Clearing any previously set network interfaces...
+I, [2019-05-31T10:46:40.094350 #52391]  INFO -- default-ubuntu-1604: ==> default: Preparing network interfaces based on configuration...
+I, [2019-05-31T10:46:40.095301 #52391]  INFO -- default-ubuntu-1604:     default: Adapter 1: nat
+I, [2019-05-31T10:46:40.169922 #52391]  INFO -- default-ubuntu-1604: ==> default: Forwarding ports...
+I, [2019-05-31T10:46:40.282761 #52391]  INFO -- default-ubuntu-1604:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2019-05-31T10:46:40.500511 #52391]  INFO -- default-ubuntu-1604: ==> default: Booting VM...
+I, [2019-05-31T10:46:40.838988 #52391]  INFO -- default-ubuntu-1604: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2019-05-31T10:46:41.822236 #52391]  INFO -- default-ubuntu-1604:     default: SSH address: 127.0.0.1:2222
+I, [2019-05-31T10:46:41.822726 #52391]  INFO -- default-ubuntu-1604:     default: SSH username: vagrant
+I, [2019-05-31T10:46:41.823136 #52391]  INFO -- default-ubuntu-1604:     default: SSH auth method: private key
+I, [2019-05-31T10:46:58.400280 #52391]  INFO -- default-ubuntu-1604:     default: 
+I, [2019-05-31T10:46:58.403283 #52391]  INFO -- default-ubuntu-1604:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2019-05-31T10:46:58.403438 #52391]  INFO -- default-ubuntu-1604:     default: this with a newly generated keypair for better security.
+I, [2019-05-31T10:46:59.837765 #52391]  INFO -- default-ubuntu-1604:     default: 
+I, [2019-05-31T10:46:59.838096 #52391]  INFO -- default-ubuntu-1604:     default: Inserting generated public key within guest...
+I, [2019-05-31T10:47:00.028911 #52391]  INFO -- default-ubuntu-1604:     default: Removing insecure key from the guest if it's present...
+I, [2019-05-31T10:47:00.238679 #52391]  INFO -- default-ubuntu-1604:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2019-05-31T10:47:01.949241 #52391]  INFO -- default-ubuntu-1604: ==> default: Machine booted and ready!
+I, [2019-05-31T10:47:01.950056 #52391]  INFO -- default-ubuntu-1604: ==> default: Checking for guest additions in VM...
+I, [2019-05-31T10:47:02.048665 #52391]  INFO -- default-ubuntu-1604:     default: The guest additions on this VM do not match the installed version of
+I, [2019-05-31T10:47:02.048768 #52391]  INFO -- default-ubuntu-1604:     default: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2019-05-31T10:47:02.048826 #52391]  INFO -- default-ubuntu-1604:     default: prevent things such as shared folders from working properly. If you see
+I, [2019-05-31T10:47:02.048868 #52391]  INFO -- default-ubuntu-1604:     default: shared folder errors, please make sure the guest additions within the
+I, [2019-05-31T10:47:02.048951 #52391]  INFO -- default-ubuntu-1604:     default: virtual machine match the version of VirtualBox you have installed on
+I, [2019-05-31T10:47:02.048992 #52391]  INFO -- default-ubuntu-1604:     default: your host and reload your VM.
+I, [2019-05-31T10:47:02.049029 #52391]  INFO -- default-ubuntu-1604:     default: 
+I, [2019-05-31T10:47:02.049071 #52391]  INFO -- default-ubuntu-1604:     default: Guest Additions Version: 5.2.22
+I, [2019-05-31T10:47:02.049113 #52391]  INFO -- default-ubuntu-1604:     default: VirtualBox Version: 6.0
+I, [2019-05-31T10:47:02.050723 #52391]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Checking for host entries
+I, [2019-05-31T10:47:02.052357 #52391]  INFO -- default-ubuntu-1604: ==> default: Setting hostname...
+I, [2019-05-31T10:47:07.594713 #52391]  INFO -- default-ubuntu-1604: ==> default: Mounting shared folders...
+I, [2019-05-31T10:47:07.595769 #52391]  INFO -- default-ubuntu-1604:     default: /tmp/omnibus/cache => /Users/tech-a04/.kitchen/cache
+I, [2019-05-31T10:47:08.328460 #52391]  INFO -- default-ubuntu-1604: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2019-05-31T10:47:11.801501 #52391]  INFO -- default-ubuntu-1604: [SSH] Established
+I, [2019-05-31T10:47:11.802887 #52391]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> created.
+I, [2019-05-31T10:47:11.803986 #52391]  INFO -- default-ubuntu-1604: Finished creating <default-ubuntu-1604> (0m46.76s).
+I, [2019-05-31T10:47:11.805805 #52391]  INFO -- default-ubuntu-1604: -----> Converging <default-ubuntu-1604>...
+I, [2019-05-31T10:47:11.807091 #52391]  INFO -- default-ubuntu-1604: Preparing files for transfer
+I, [2019-05-31T10:47:11.807413 #52391]  INFO -- default-ubuntu-1604: Preparing dna.json
+I, [2019-05-31T10:47:11.808187 #52391]  INFO -- default-ubuntu-1604: Resolving cookbook dependencies with Berkshelf 7.0.4...
+I, [2019-05-31T10:47:16.544822 #52391]  INFO -- default-ubuntu-1604: Removing non-cookbook files before transfer
+I, [2019-05-31T10:47:16.557151 #52391]  INFO -- default-ubuntu-1604: Preparing validation.pem
+I, [2019-05-31T10:47:16.559928 #52391]  INFO -- default-ubuntu-1604: Preparing client.rb
+I, [2019-05-31T10:47:16.660291 #52391]  INFO -- default-ubuntu-1604: ubuntu 16.04 x86_64
+I, [2019-05-31T10:47:16.660713 #52391]  INFO -- default-ubuntu-1604: Getting information for chef stable 14.10.9 for ubuntu...
+I, [2019-05-31T10:47:16.660814 #52391]  INFO -- default-ubuntu-1604: downloading https://omnitruck.chef.io/stable/chef/metadata?v=14.10.9&p=ubuntu&pv=16.04&m=x86_64
+I, [2019-05-31T10:47:16.660863 #52391]  INFO -- default-ubuntu-1604:   to file /tmp/install.sh.1753/metadata.txt
+I, [2019-05-31T10:47:16.661754 #52391]  INFO -- default-ubuntu-1604: trying wget...
+I, [2019-05-31T10:47:16.740185 #52391]  INFO -- default-ubuntu-1604: sha1	cf19d6a3c21bef28160a9b6896381c6e160fb640
+I, [2019-05-31T10:47:16.741118 #52391]  INFO -- default-ubuntu-1604: sha256	c41299e167acb143b2328a63a774c3b85cd939d3ee40bc4aedf9f62252fe4ab9
+I, [2019-05-31T10:47:16.741948 #52391]  INFO -- default-ubuntu-1604: url	https://packages.chef.io/files/stable/chef/14.10.9/ubuntu/16.04/chef_14.10.9-1_amd64.deb
+I, [2019-05-31T10:47:16.742686 #52391]  INFO -- default-ubuntu-1604: version	14.10.9
+I, [2019-05-31T10:47:16.745500 #52391]  INFO -- default-ubuntu-1604: downloaded metadata file looks valid...
+I, [2019-05-31T10:47:16.756326 #52391]  INFO -- default-ubuntu-1604: /tmp/omnibus/cache/chef_14.10.9-1_amd64.deb exists
+I, [2019-05-31T10:47:16.756748 #52391]  INFO -- default-ubuntu-1604: Comparing checksum with sha256sum...
+I, [2019-05-31T10:47:17.165692 #52391]  INFO -- default-ubuntu-1604: Installing chef 14.10.9
+I, [2019-05-31T10:47:17.165776 #52391]  INFO -- default-ubuntu-1604: installing with dpkg...
+I, [2019-05-31T10:47:17.234786 #52391]  INFO -- default-ubuntu-1604: Selecting previously unselected package chef.
+I, [2019-05-31T10:47:17.382327 #52391]  INFO -- default-ubuntu-1604: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38412 files and directories currently installed.)
+I, [2019-05-31T10:47:17.385125 #52391]  INFO -- default-ubuntu-1604: Preparing to unpack .../cache/chef_14.10.9-1_amd64.deb ...
+I, [2019-05-31T10:47:17.393690 #52391]  INFO -- default-ubuntu-1604: Unpacking chef (14.10.9-1) ...
+I, [2019-05-31T10:47:26.568360 #52391]  INFO -- default-ubuntu-1604: Setting up chef (14.10.9-1) ...
+I, [2019-05-31T10:47:26.657723 #52391]  INFO -- default-ubuntu-1604: Thank you for installing Chef!
+I, [2019-05-31T10:47:26.726049 #52391]  INFO -- default-ubuntu-1604: Transferring files to <default-ubuntu-1604>
+I, [2019-05-31T10:47:28.313974 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:26+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /tmp/kitchen, /tmp/kitchen
+I, [2019-05-31T10:47:28.314693 #52391]  INFO -- default-ubuntu-1604:   One version per cookbook
+I, [2019-05-31T10:47:28.315189 #52391]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T10:47:28.325894 #52391]  INFO -- default-ubuntu-1604: Starting Chef Client, version 14.10.9
+I, [2019-05-31T10:47:28.326713 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:26+00:00] INFO: *** Chef 14.10.9 ***
+I, [2019-05-31T10:47:28.327473 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:26+00:00] INFO: Platform: x86_64-linux
+I, [2019-05-31T10:47:28.328160 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:26+00:00] INFO: Chef-client pid: 1832
+I, [2019-05-31T10:47:28.329655 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:26+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+I, [2019-05-31T10:47:29.712576 #52391]  INFO -- default-ubuntu-1604: Creating a new client identity for default-ubuntu-1604 using the validator key.
+I, [2019-05-31T10:47:29.713282 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:27+00:00] INFO: Client key /tmp/kitchen/client.pem is not present - registering
+I, [2019-05-31T10:47:29.779467 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:27+00:00] INFO: Setting the run_list to ["recipe[python::default]"] from CLI options
+I, [2019-05-31T10:47:29.789130 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:27+00:00] INFO: Run List is [recipe[python::default]]
+I, [2019-05-31T10:47:29.789894 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:27+00:00] INFO: Run List expands to [python::default]
+I, [2019-05-31T10:47:29.790836 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:27+00:00] INFO: Starting Chef Run for default-ubuntu-1604
+I, [2019-05-31T10:47:29.791710 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:27+00:00] INFO: Running start handlers
+I, [2019-05-31T10:47:29.792443 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:27+00:00] INFO: Start handlers complete.
+I, [2019-05-31T10:47:29.795452 #52391]  INFO -- default-ubuntu-1604: resolving cookbooks for run list: ["python::default"]
+I, [2019-05-31T10:47:29.808456 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:27+00:00] INFO: Loading cookbooks [python@0.1.0]
+I, [2019-05-31T10:47:29.810056 #52391]  INFO -- default-ubuntu-1604: Synchronizing Cookbooks:
+I, [2019-05-31T10:47:29.819164 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:27+00:00] INFO: Storing updated cookbooks/python/metadata.json in the cache.
+I, [2019-05-31T10:47:29.821569 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:27+00:00] INFO: Storing updated cookbooks/python/recipes/default.rb in the cache.
+I, [2019-05-31T10:47:29.824191 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:27+00:00] INFO: Storing updated cookbooks/python/metadata.rb in the cache.
+I, [2019-05-31T10:47:29.825998 #52391]  INFO -- default-ubuntu-1604:   - python (0.1.0)
+I, [2019-05-31T10:47:29.831647 #52391]  INFO -- default-ubuntu-1604: Installing Cookbook Gems:
+I, [2019-05-31T10:47:29.831744 #52391]  INFO -- default-ubuntu-1604: Compiling Cookbooks...
+I, [2019-05-31T10:47:29.832019 #52391]  INFO -- default-ubuntu-1604: Converging 3 resources
+I, [2019-05-31T10:47:29.833149 #52391]  INFO -- default-ubuntu-1604: Recipe: python::default
+I, [2019-05-31T10:47:29.836801 #52391]  INFO -- default-ubuntu-1604:   * apt_update[update] action update[2019-05-31T09:47:27+00:00] INFO: Processing apt_update[update] action update (python::default line 7)
+I, [2019-05-31T10:47:29.839046 #52391]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T10:47:29.840124 #52391]  INFO -- default-ubuntu-1604:     - force update new lists of packages
+I, [2019-05-31T10:47:29.841433 #52391]  INFO -- default-ubuntu-1604:     * directory[/var/lib/apt/periodic] action create[2019-05-31T09:47:27+00:00] INFO: Processing directory[/var/lib/apt/periodic] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 60)
+I, [2019-05-31T10:47:29.844130 #52391]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T10:47:29.845811 #52391]  INFO -- default-ubuntu-1604:     * directory[/etc/apt/apt.conf.d] action create[2019-05-31T09:47:27+00:00] INFO: Processing directory[/etc/apt/apt.conf.d] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 60)
+I, [2019-05-31T10:47:29.848303 #52391]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T10:47:29.850646 #52391]  INFO -- default-ubuntu-1604:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing[2019-05-31T09:47:27+00:00] INFO: Processing file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 65)
+I, [2019-05-31T10:47:29.854099 #52391]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T10:47:29.855752 #52391]  INFO -- default-ubuntu-1604:     * execute[apt-get -q update] action run[2019-05-31T09:47:27+00:00] INFO: Processing execute[apt-get -q update] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 70)
+I, [2019-05-31T10:47:29.926450 #52391]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T10:47:29.927674 #52391]  INFO -- default-ubuntu-1604:       [execute] Get:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+I, [2019-05-31T10:47:29.940933 #52391]  INFO -- default-ubuntu-1604:          Hit:2 http://archive.ubuntu.com/ubuntu xenial InRelease
+I, [2019-05-31T10:47:29.943308 #52391]  INFO -- default-ubuntu-1604:          Get:3 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+I, [2019-05-31T10:47:29.976463 #52391]  INFO -- default-ubuntu-1604:          Get:4 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+I, [2019-05-31T10:47:30.168093 #52391]  INFO -- default-ubuntu-1604:          Get:5 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [651 kB]
+I, [2019-05-31T10:47:30.236993 #52391]  INFO -- default-ubuntu-1604:          Get:6 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages [539 kB]
+I, [2019-05-31T10:47:30.304493 #52391]  INFO -- default-ubuntu-1604:          Get:7 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [266 kB]
+I, [2019-05-31T10:47:30.331763 #52391]  INFO -- default-ubuntu-1604:          Get:8 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [435 kB]
+I, [2019-05-31T10:47:30.370890 #52391]  INFO -- default-ubuntu-1604:          Get:9 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages [378 kB]
+I, [2019-05-31T10:47:30.388507 #52391]  INFO -- default-ubuntu-1604:          Get:10 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [176 kB]
+I, [2019-05-31T10:47:30.400655 #52391]  INFO -- default-ubuntu-1604:          Get:11 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [5600 B]
+I, [2019-05-31T10:47:30.403858 #52391]  INFO -- default-ubuntu-1604:          Get:12 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages [5764 B]
+I, [2019-05-31T10:47:30.411806 #52391]  INFO -- default-ubuntu-1604:          Get:13 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en [2676 B]
+I, [2019-05-31T10:47:30.520007 #52391]  INFO -- default-ubuntu-1604:          Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [957 kB]
+I, [2019-05-31T10:47:30.615585 #52391]  INFO -- default-ubuntu-1604:          Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages [824 kB]
+I, [2019-05-31T10:47:30.712222 #52391]  INFO -- default-ubuntu-1604:          Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en [381 kB]
+I, [2019-05-31T10:47:30.757438 #52391]  INFO -- default-ubuntu-1604:          Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [7616 B]
+I, [2019-05-31T10:47:30.764472 #52391]  INFO -- default-ubuntu-1604:          Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages [7580 B]
+I, [2019-05-31T10:47:30.771793 #52391]  INFO -- default-ubuntu-1604:          Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en [2272 B]
+I, [2019-05-31T10:47:30.776961 #52391]  INFO -- default-ubuntu-1604:          Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [748 kB]
+I, [2019-05-31T10:47:30.832704 #52391]  INFO -- default-ubuntu-1604:          Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages [685 kB]
+I, [2019-05-31T10:47:30.871909 #52391]  INFO -- default-ubuntu-1604:          Get:22 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [311 kB]
+I, [2019-05-31T10:47:30.886577 #52391]  INFO -- default-ubuntu-1604:          Get:23 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [16.7 kB]
+I, [2019-05-31T10:47:30.889248 #52391]  INFO -- default-ubuntu-1604:          Get:24 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages [15.8 kB]
+I, [2019-05-31T10:47:36.508402 #52391]  INFO -- default-ubuntu-1604:          Fetched 6741 kB in 2s (2996 kB/s)
+I, [2019-05-31T10:47:38.432654 #52391]  INFO -- default-ubuntu-1604:          Reading package lists...
+I, [2019-05-31T10:47:38.607452 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:36+00:00] INFO: execute[apt-get -q update] ran successfully
+I, [2019-05-31T10:47:38.609034 #52391]  INFO -- default-ubuntu-1604:       - execute ["apt-get", "-q", "update"]
+I, [2019-05-31T10:47:38.609118 #52391]  INFO -- default-ubuntu-1604:   
+I, [2019-05-31T10:47:38.609732 #52391]  INFO -- default-ubuntu-1604:   * apt_package[python-pip] action install[2019-05-31T09:47:36+00:00] INFO: Processing apt_package[python-pip] action install (python::default line 11)
+I, [2019-05-31T10:48:00.614363 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:58+00:00] INFO: apt_package[python-pip] installed python-pip at 8.1.1-2ubuntu0.4
+I, [2019-05-31T10:48:00.614860 #52391]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T10:48:00.617146 #52391]  INFO -- default-ubuntu-1604:     - install version 8.1.1-2ubuntu0.4 of package python-pip
+I, [2019-05-31T10:48:00.620997 #52391]  INFO -- default-ubuntu-1604:   * apt_package[python-minimal] action install[2019-05-31T09:47:58+00:00] INFO: Processing apt_package[python-minimal] action install (python::default line 15)
+I, [2019-05-31T10:48:00.699915 #52391]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T10:48:00.759480 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:58+00:00] INFO: Chef Run complete in 30.982299643 seconds
+I, [2019-05-31T10:48:00.760748 #52391]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T10:48:00.761631 #52391]  INFO -- default-ubuntu-1604: Running handlers:
+I, [2019-05-31T10:48:00.762352 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:58+00:00] INFO: Running report handlers
+I, [2019-05-31T10:48:00.763166 #52391]  INFO -- default-ubuntu-1604: Running handlers complete
+I, [2019-05-31T10:48:00.764077 #52391]  INFO -- default-ubuntu-1604: [2019-05-31T09:47:58+00:00] INFO: Report handlers complete
+I, [2019-05-31T10:48:00.765176 #52391]  INFO -- default-ubuntu-1604: Chef Client finished, 3/7 resources updated in 32 seconds
+I, [2019-05-31T10:48:00.776488 #52391]  INFO -- default-ubuntu-1604: Downloading files from <default-ubuntu-1604>
+I, [2019-05-31T10:48:00.781166 #52391]  INFO -- default-ubuntu-1604: Finished converging <default-ubuntu-1604> (0m48.97s).
+I, [2019-05-31T10:48:00.781311 #52391]  INFO -- default-ubuntu-1604: -----> Setting up <default-ubuntu-1604>...
+I, [2019-05-31T10:48:00.784125 #52391]  INFO -- default-ubuntu-1604: Finished setting up <default-ubuntu-1604> (0m0.00s).
+I, [2019-05-31T10:48:00.784287 #52391]  INFO -- default-ubuntu-1604: -----> Verifying <default-ubuntu-1604>...
+I, [2019-05-31T10:48:01.199507 #52391]  INFO -- default-ubuntu-1604: Loaded tests from {:path=>".Users.tech-a04.Documents.week-10.day-4.Group Project - Uber App.group-project-python-cookbook.test.integration.default"} 
+I, [2019-05-31T10:48:01.385150 #52391]  INFO -- default-ubuntu-1604: Finished verifying <default-ubuntu-1604> (0m0.60s).
+I, [2019-05-31T10:48:01.387620 #52391]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
+I, [2019-05-31T10:48:06.289672 #52391]  INFO -- default-ubuntu-1604: ==> default: Forcing shutdown of VM...
+I, [2019-05-31T10:48:07.521479 #52391]  INFO -- default-ubuntu-1604: ==> default: Destroying VM and associated drives...
+I, [2019-05-31T10:48:07.890160 #52391]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Removing hosts
+I, [2019-05-31T10:48:07.973659 #52391]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> destroyed.
+I, [2019-05-31T10:48:07.975190 #52391]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m6.59s).
+I, [2019-05-31T10:48:07.977741 #52391]  INFO -- default-ubuntu-1604: Finished testing <default-ubuntu-1604> (1m42.94s).

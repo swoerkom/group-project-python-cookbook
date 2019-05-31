@@ -17,6 +17,10 @@ describe port(80), :skip do
   it { should_not be_listening }
 end
 
-describe package 'python' do
+describe package 'python-pip' do
+  it { should be_installed }
+end
+
+describe package 'python-minimal' do
   it { should be_installed }
 end

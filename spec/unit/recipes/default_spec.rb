@@ -15,6 +15,10 @@ describe 'python::default' do
       runner.converge(described_recipe)
     end
 
+    it 'updates all sources' do
+      expect(chef_run).to update_apt_update 'update'
+    end
+
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
@@ -22,6 +26,10 @@ describe 'python::default' do
     it "should install python-pip" do
       expect(chef_run).to install_package("python-pip")
     end
+    it "should install python-minimal" do
+      expect(chef_run).to install_package("python-minimal")
+    end
+
     at_exit { ChefSpec::Coverage.report! }
   end
 end
