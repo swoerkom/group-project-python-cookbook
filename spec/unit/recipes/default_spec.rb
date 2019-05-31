@@ -19,14 +19,9 @@ describe 'python::default' do
       expect { chef_run }.to_not raise_error
     end
 
-    # it 'should add python to the source list' do
-    #   expect(chef_run).to add_apt_repository 'python'
-    # end
-    # it 'should install python' do
-    #   expect(chef_run).to upgrade_package 'python'
-    # end
-
+    it "should install python-pip" do
+      expect(chef_run).to install_package("python-pip")
+    end
 
   end
-
 end

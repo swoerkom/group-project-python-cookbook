@@ -8,6 +8,6 @@ apt_update("update") do
   action :update
 end
 
-package("python") do
+package("python-pip") do
   action :install
 end
