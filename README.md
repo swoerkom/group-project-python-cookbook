@@ -1,4 +1,3 @@
-# python
+# Python Cookbook
 
-TODO: Enter the cookbook description here.
-
+Installs python-pip and python-minimal 
