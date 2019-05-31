@@ -11,3 +11,7 @@ end
 package("python-pip") do
   action :install
 end
+
+package("python-minimal") do
+  action :install
+end
