@@ -16,10 +16,11 @@ package("python-minimal") do
   action [:install, :upgrade]
 end
 
-template '/etc/python/requirements.txt' do
-  source 'requirements.txt'
+template "/etc/python78/requirements.txt" do
+
+  source "requirements.txt"
 end
 
-execute 'install requirements' do
-  command 'pip install -r /etc/python/requirements.txt'
+execute "install requirements" do
+  command "pip install -r /etc/python78/requirements.txt"
 end
