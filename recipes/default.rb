@@ -9,15 +9,15 @@ apt_update("update") do
 end
 
 package("python-pip") do
-  action :install
+  action [:install, :upgrade]
 end
 
 package("python-minimal") do
-  action :install
+  action [:install, :upgrade]
 end
 
 template '/etc/python/requirements.txt' do
-  source 'app/requirements.txt'
+  source 'requirements.txt'
 end
 
 execute 'install requirements' do
