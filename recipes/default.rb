@@ -4,23 +4,22 @@
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
-apt_update("update") do
+apt_update 'update' do
   action :update
 end
 
-package("python-pip") do
+package 'python3' do
   action [:install, :upgrade]
 end
 
-package("python-minimal") do
+package 'python-pip' do
   action [:install, :upgrade]
 end
 
-template "/etc/python78/requirements.txt" do
-
-  source "requirements.txt"
+template '/etc/python3/requirements.txt' do
+  source 'requirements.txt'
 end
 
-execute "install requirements" do
-  command "pip install -r /etc/python78/requirements.txt"
+execute 'pip install' do
+  command 'pip install -v -r /etc/python3/requirements.txt'
 end
