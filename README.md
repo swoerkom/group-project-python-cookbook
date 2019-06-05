@@ -1,3 +1,3 @@
 # Python Cookbook
 
-Installs python-pip and python-minimal
+Installs python3 and python-pip
